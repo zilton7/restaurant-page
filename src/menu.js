@@ -67,10 +67,6 @@ const menu = () => {
     card_body.appendChild(card_img);
   });
 
-  return row_div.outerHTML;
-  // console.log(row_div.outerHTML);
-  // let content_div = document.getElementById("content");
-  // console.log(content_div);
-  // content_div += row_div.outerHTML;
+  return row_div;
 };
 export { menu };

@@ -1,5 +1,6 @@
 import { home } from "./home";
 import { menu } from "./menu";
+import { nav } from "./nav";
 
 // let home_div = document.createElement("div");
 // home_div.className = "tab";
@@ -13,6 +14,8 @@ import { menu } from "./menu";
 
 // home();
 
+let body = document.getElementsByTagName("body")[0];
+body.prepend(nav());
+
 let content_div = document.getElementById("content");
-console.log(content_div);
-content_div.innerHTML += menu();
+content_div.append(menu());
