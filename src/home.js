@@ -1,5 +1,7 @@
 const home = () => {
   let content_div = document.getElementById("content");
+  let tab_links_div = document.getElementById("tab");
+
   let new_div = document.createElement("div");
   new_div.className = "tabcontent";
   new_div.id = "Home";
