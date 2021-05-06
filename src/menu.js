@@ -28,13 +28,28 @@ const menu = () => {
         "Depending on how spicy you and your family like your dishes, use as little or ",
       image: "https://i.ibb.co/t3b0XHK/image.png",
     },
+    {
+      dish: " Veggie Cola",
+      price: "$1.99",
+      ingredients:
+        "Depending on how spicy you and your family like your dishes, use as little or ",
+      image: "https://i.ibb.co/t3b0XHK/image.png",
+    },
+    {
+      dish: " Veggie Cola",
+      price: "$1.99",
+      ingredients:
+        "Depending on how spicy you and your family like your dishes, use as little or ",
+      image: "https://i.ibb.co/t3b0XHK/image.png",
+    },
   ];
 
   let menuSection = document.createElement("div");
+  menuSection.className = "section";
   menuSection.id = "menu";
 
   let sectionTitle = document.createElement("h3");
-  sectionTitle.className = "px-5 pt-5";
+  sectionTitle.className = "px-5";
   sectionTitle.innerHTML = "Menu";
 
   menuSection.appendChild(sectionTitle);
