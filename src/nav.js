@@ -8,7 +8,7 @@ const nav = () => {
     let li = document.createElement("li");
     li.className = "nav-item";
     let a = document.createElement("a");
-    a.href = "#";
+    a.href = "#" + link.toLowerCase();
     a.innerHTML = link;
     a.className = "nav-link";
     li.append(a);

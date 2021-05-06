@@ -30,6 +30,14 @@ const menu = () => {
     },
   ];
 
+  let menuSection = document.createElement("div");
+  menuSection.id = "menu";
+
+  let sectionTitle = document.createElement("h3");
+  sectionTitle.innerHTML = "Menu";
+
+  menuSection.appendChild(sectionTitle);
+
   let row_div = document.createElement("div");
   row_div.className = "row m-5 p-5";
 
@@ -67,6 +75,8 @@ const menu = () => {
     card_body.appendChild(card_img);
   });
 
-  return row_div;
+  menuSection.appendChild(row_div);
+
+  return menuSection;
 };
 export { menu };
