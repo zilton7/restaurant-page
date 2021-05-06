@@ -2,7 +2,7 @@ const home = () => {
   let homeSection = document.createElement("div");
   homeSection.className = "section";
   homeSection.classList = "mx-4 mb-5";
-  homeSection.id = "Home";
+  homeSection.id = "home";
 
   let sectionTitle = document.createElement("h3");
   sectionTitle.className = "px-5";
