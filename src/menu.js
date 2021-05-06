@@ -34,12 +34,13 @@ const menu = () => {
   menuSection.id = "menu";
 
   let sectionTitle = document.createElement("h3");
+  sectionTitle.className = "px-5 pt-5";
   sectionTitle.innerHTML = "Menu";
 
   menuSection.appendChild(sectionTitle);
 
   let row_div = document.createElement("div");
-  row_div.className = "row m-5 p-5";
+  row_div.className = "row";
 
   menu_items.forEach((item) => {
     let col_div = document.createElement("div");
