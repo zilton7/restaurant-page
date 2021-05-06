@@ -1,3 +1,3 @@
-import { whatever } from "./content";
+import { home } from "./home";
 
-whatever();
+home();
