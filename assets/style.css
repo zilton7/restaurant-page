@@ -1,0 +1,13 @@
+body {
+  color: rgb(199, 195, 189);
+  background-color: rgb(23, 25, 26);
+}
+
+#contact {
+  height: 400px;
+}
+
+.restaurant-image {
+  height: 300px;
+  border-radius: 30%;
+}

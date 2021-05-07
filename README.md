@@ -1,39 +1,34 @@
-# Project Name
-
+# Restaurant Page
 ![screenshot](./app_screenshot.png)
 
-Description goes here
-
+Here I built a very basic restaurant page using only JavaScript modules and webpack. All pages are generated using Javascript DOM manipulation and HTML Element creation.
 ## Built With
 
-- JavaScript
-
-## Live Demo
-
-[Live demo](https://)
+- JavaScript;
+- Webpack;
+- Bootstrap 4;
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+```$ npm install --save-dev webpack```
 
-### Prerequisites
-
-- 
-
-### Setup
+To get a local copy of the repository please run the following commands on your terminal:
 
 ```
+$ cd <folder>
 ```
 
+```
+$ git clone https://github.com/zilton7/restaurant-page.git
+```
 
+```
+$ cd restaurant-page
+```
 
-## Testing
-
-> 
-
-
-## Usage
-
+```
+$ point your browser to 'dist/index.html'
+```
 
 ## AUTHOR
 
