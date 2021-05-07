@@ -1,15 +1,15 @@
 const contact = () => {
-  let contactSection = document.createElement("div");
-  contactSection.className = "section";
-  contactSection.classList = "mx-4 mb-5";
-  contactSection.id = "contact";
+  const contactSection = document.createElement('div');
+  contactSection.className = 'section';
+  contactSection.classList = 'mx-4 mb-5';
+  contactSection.id = 'contact';
 
-  let sectionTitle = document.createElement("h3");
-  sectionTitle.className = "px-5";
-  sectionTitle.innerHTML = "Contact";
+  const sectionTitle = document.createElement('h3');
+  sectionTitle.className = 'px-5';
+  sectionTitle.innerHTML = 'Contact';
 
-  let form = document.createElement("form");
-  form.actinon = "#";
+  const form = document.createElement('form');
+  form.actinon = '#';
   form.innerHTML = `
   <div>
     <div class="container">
@@ -49,4 +49,4 @@ const contact = () => {
   return contactSection;
 };
 
-export { contact };
+export default contact;

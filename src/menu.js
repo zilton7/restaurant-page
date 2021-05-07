@@ -1,98 +1,99 @@
 const menu = () => {
-  const menu_items = [
+  const menuItems = [
     {
-      dish: " Vegetarian Spaghetti",
-      price: "$7.99",
+      dish: ' Vegetarian Spaghetti',
+      price: '$7.99',
       ingredients:
-        "Salty and savory, the roasting method kills the natural bitterness of asparagus. ",
-      image: "https://i.ibb.co/Zzmc6F3/image.png",
+        'Salty and savory, the roasting method kills the natural bitterness of asparagus. ',
+      image: 'https://i.ibb.co/Zzmc6F3/image.png',
     },
     {
-      dish: " Veggie Cola",
-      price: "$1.99",
+      dish: ' Veggie Cola',
+      price: '$1.99',
       ingredients:
-        "Depending on how spicy you and your family like your dishes, use as little or ",
-      image: "https://i.ibb.co/8zYL4Vt/image.png",
+        'Depending on how spicy you and your family like your dishes, use as little or ',
+      image: 'https://i.ibb.co/8zYL4Vt/image.png',
     },
     {
-      dish: " Veggie Cola",
-      price: "$1.99",
+      dish: ' Veggie Cola',
+      price: '$1.99',
       ingredients:
-        "Depending on how spicy you and your family like your dishes, use as little or ",
-      image: "https://i.ibb.co/9ytT8RV/image.png",
+        'Depending on how spicy you and your family like your dishes, use as little or ',
+      image: 'https://i.ibb.co/9ytT8RV/image.png',
     },
     {
-      dish: " Veggie Cola",
-      price: "$1.99",
+      dish: ' Veggie Cola',
+      price: '$1.99',
       ingredients:
-        "Depending on how spicy you and your family like your dishes, use as little or ",
-      image: "https://i.ibb.co/t3b0XHK/image.png",
+        'Depending on how spicy you and your family like your dishes, use as little or ',
+      image: 'https://i.ibb.co/t3b0XHK/image.png',
     },
     {
-      dish: " Veggie Cola",
-      price: "$1.99",
+      dish: ' Veggie Cola',
+      price: '$1.99',
       ingredients:
-        "Depending on how spicy you and your family like your dishes, use as little or ",
-      image: "https://i.ibb.co/t3b0XHK/image.png",
+        'Depending on how spicy you and your family like your dishes, use as little or ',
+      image: 'https://i.ibb.co/t3b0XHK/image.png',
     },
     {
-      dish: " Veggie Cola",
-      price: "$1.99",
+      dish: ' Veggie Cola',
+      price: '$1.99',
       ingredients:
-        "Depending on how spicy you and your family like your dishes, use as little or ",
-      image: "https://i.ibb.co/t3b0XHK/image.png",
+        'Depending on how spicy you and your family like your dishes, use as little or ',
+      image: 'https://i.ibb.co/t3b0XHK/image.png',
     },
   ];
 
-  let menuSection = document.createElement("div");
-  menuSection.className = "section  mb-5";
-  menuSection.id = "menu";
+  const menuSection = document.createElement('div');
+  menuSection.className = 'section  mb-5';
+  menuSection.id = 'menu';
 
-  let sectionTitle = document.createElement("h3");
-  sectionTitle.className = "px-5";
-  sectionTitle.innerHTML = "Menu";
+  const sectionTitle = document.createElement('h3');
+  sectionTitle.className = 'px-5';
+  sectionTitle.innerHTML = 'Menu';
 
   menuSection.appendChild(sectionTitle);
 
-  let row_div = document.createElement("div");
-  row_div.className = "row";
+  const rowDiv = document.createElement('div');
+  rowDiv.className = 'row';
 
-  menu_items.forEach((item) => {
-    let col_div = document.createElement("div");
-    col_div.className = "col-4";
+  menuItems.forEach((item) => {
+    const colDiv = document.createElement('div');
+    colDiv.className = 'col-4';
 
-    let card_div = document.createElement("div");
-    card_div.className = "card mb-3";
+    const cardDiv = document.createElement('div');
+    cardDiv.className = 'card mb-3';
 
-    let card_img = document.createElement("img");
-    card_img.className = "card-img-bottom";
-    card_img.src = `${item.image}`;
+    const cardImg = document.createElement('img');
+    cardImg.className = 'card-img-bottom';
+    cardImg.src = `${item.image}`;
 
-    let card_body = document.createElement("div");
-    card_body.className = "card-body";
+    const cardBody = document.createElement('div');
+    cardBody.className = 'card-body';
 
-    let card_item = document.createElement("h4");
-    card_item.className = "card-title";
-    card_item.append(item.dish);
+    const cardItem = document.createElement('h4');
+    cardItem.className = 'card-title';
+    cardItem.append(item.dish);
 
-    let card_price = document.createElement("h4");
-    card_price.className = "card-title";
-    card_price.append(item.price);
+    const cardPrice = document.createElement('h4');
+    cardPrice.className = 'card-title';
+    cardPrice.append(item.price);
 
-    let card_ingredients = document.createElement("p");
-    card_ingredients.className = "card-text";
-    card_ingredients.append(item.ingredients);
+    const cardIngredients = document.createElement('p');
+    cardIngredients.className = 'card-text';
+    cardIngredients.append(item.ingredients);
 
-    row_div.appendChild(col_div);
-    col_div.appendChild(card_body);
-    card_body.appendChild(card_item);
-    card_body.appendChild(card_price);
-    card_body.appendChild(card_ingredients);
-    card_body.appendChild(card_img);
+    rowDiv.appendChild(colDiv);
+    colDiv.appendChild(cardBody);
+    cardBody.appendChild(cardItem);
+    cardBody.appendChild(cardPrice);
+    cardBody.appendChild(cardIngredients);
+    cardBody.appendChild(cardImg);
   });
 
-  menuSection.appendChild(row_div);
+  menuSection.appendChild(rowDiv);
 
   return menuSection;
 };
-export { menu };
+
+export default menu;

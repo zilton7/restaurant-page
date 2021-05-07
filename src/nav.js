@@ -1,17 +1,17 @@
 const nav = () => {
-  const nav_links = ["Home", "Menu", "Contact"];
+  const navLinks = ['Home', 'Menu', 'Contact'];
 
-  let nav = document.createElement("ul");
-  nav.className = "nav px-5 pb-5";
+  const nav = document.createElement('ul');
+  nav.className = 'nav px-5 pb-5';
   nav.innerHTML += "<h5 class='my-auto'>Il Ristorante del Vegetaro</h5>";
 
-  nav_links.forEach((link) => {
-    let li = document.createElement("li");
-    li.className = "nav-item";
-    let a = document.createElement("a");
-    a.href = "#" + link.toLowerCase();
+  navLinks.forEach((link) => {
+    const li = document.createElement('li');
+    li.className = 'nav-item';
+    const a = document.createElement('a');
+    a.href = `#${link.toLowerCase()}`;
     a.innerHTML = link;
-    a.className = "nav-link";
+    a.className = 'nav-link';
     li.append(a);
     nav.append(li);
   });
@@ -19,4 +19,4 @@ const nav = () => {
   return nav;
 };
 
-export { nav };
+export default nav;

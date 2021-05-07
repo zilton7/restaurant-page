@@ -6,11 +6,7 @@ Description goes here
 
 ## Built With
 
-- JavaScript
-
-## Live Demo
-
-[Live demo](https://)
+- JavaScript;
 
 ## Getting Started
 

@@ -1,12 +1,12 @@
-import { home } from "./home";
-import { menu } from "./menu";
-import { nav } from "./nav";
-import { contact } from "./contact";
+import home from './home';
+import menu from './menu';
+import nav from './nav';
+import contact from './contact';
 
-let body = document.getElementsByTagName("body")[0];
+const body = document.getElementsByTagName('body')[0];
 body.prepend(nav());
 
-let content_div = document.getElementById("content");
-content_div.append(home());
-content_div.append(menu());
-content_div.append(contact());
+const contentDiv = document.getElementById('content');
+contentDiv.append(home());
+contentDiv.append(menu());
+contentDiv.append(contact());
