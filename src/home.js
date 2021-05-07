@@ -14,6 +14,17 @@ const home = () => {
   let title = document.createElement("h4");
   title.innerHTML = "'Il Ristorante del Vegetaro'";
   new_div.appendChild(title);
+
+  let img = document.createElement("img");
+  img.src = "../assets/restaurant.jpg";
+  img.className = "restaurant-image";
+
+  let img_wrapper = document.createElement("div");
+  img_wrapper.className = "text-center";
+  img_wrapper.appendChild(img);
+
+  homeSection.appendChild(img_wrapper);
+
   let paragraph = document.createElement("p");
   paragraph.innerHTML =
     "A restaurant, or an eatery, is a business that prepares and serves food and drinks to customers. Meals are generally served and eaten on the premises, but many restaurants also offer take-out and food delivery services. Restaurants vary greatly in appearance and offerings, including a wide variety of cuisines and service models ranging from inexpensive fast food restaurants and cafeterias, to mid-priced family restaurants, to high-priced luxury establishments. In Western countries, most mid-to high-range restaurants serve alcoholic beverages such as beer and wine. Some restaurants serve all the major meals, such as breakfast, lunch, and dinner. Other restaurants may serve only a single meal or they may server.";

@@ -3,6 +3,7 @@ const nav = () => {
 
   let nav = document.createElement("ul");
   nav.className = "nav px-5 pb-5";
+  nav.innerHTML += "<h5 class='my-auto'>Il Ristorante del Vegetaro</h5>";
 
   nav_links.forEach((link) => {
     let li = document.createElement("li");

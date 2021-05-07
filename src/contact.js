@@ -11,15 +11,14 @@ const contact = () => {
   let form = document.createElement("form");
   form.actinon = "#";
   form.innerHTML = `
-  <div class="bg-light">
+  <div>
     <div class="container">
         <div class="row justify justify-content-center">
             <div class="col-11 col-md-8 col-lg-6 col-xl-5">
                 <form class="">
-                    <div class="card bg-dark">
+                    <div>
                         <div class="row mt-0">
                             <div class="col-md-12 ">
-                                <h4 class="">Contact Us</h4>
                                 <p>Use the form below to share your questions, ideas, comments and feedback</p>
                             </div>
                         </div>
