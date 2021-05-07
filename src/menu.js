@@ -45,7 +45,7 @@ const menu = () => {
   ];
 
   let menuSection = document.createElement("div");
-  menuSection.className = "section";
+  menuSection.className = "section  mb-5";
   menuSection.id = "menu";
 
   let sectionTitle = document.createElement("h3");
