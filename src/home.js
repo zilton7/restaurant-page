@@ -16,7 +16,7 @@ const home = () => {
   newDiv.appendChild(title);
 
   const img = document.createElement("img");
-  img.src = "./assets/restaurant.jpg";
+  img.src = "https://i.ibb.co/qMQ3n9k/restaurant.jpg";
   img.className = "restaurant-image";
 
   const imgWrapper = document.createElement("div");
