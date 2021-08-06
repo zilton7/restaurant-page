@@ -1,7 +1,7 @@
 # Restaurant Page
 ![screenshot](./app_screenshot.png)
 
-Here I built a very basic restaurant page using only JavaScript modules and webpack. All pages are generated using Javascript DOM manipulation and HTML Element creation.
+Here I built a basic restaurant page using only JavaScript modules and webpack. All pages are generated using Javascript DOM manipulation and HTML Element creation.
 ## Built With
 
 - JavaScript;
